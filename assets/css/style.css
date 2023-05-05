@@ -1,0 +1,818 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&family=Open+Sans:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    scroll-behavior: smooth;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+.banner::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+}
+.banner nav{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 15px;
+    border: 1px solid #0000;
+    display: flex;
+    justify-content: space-between; 
+}
+.banner nav .logo img{
+    width: 60%;
+}
+.banner nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.banner nav ul li a{
+    margin-left: 10px;
+    display:inline-block;
+    padding: 12px 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.banner nav ul li a:hover{
+    background-color: #ff4831;
+}
+.banner .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.banner .content h1{
+    font-size: 65px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+}
+.banner .content p{
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    text-align: center;
+}
+.banner .content .btn , .xenon .container .right .btn{
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #ff4831;
+    padding: 20px 40px;
+    margin-top: 20px;
+    font-family: 'Fira Sans', sans-serif;
+}
+.banner .content .btn:hover{
+    color: #ff4831;
+    background: #fff;
+    transition: 0.3s;
+}
+.banner nav .logo , .content , .banner nav ul{
+    z-index: 1;
+}
+
+/* BANNER SECTION STYLE END HERE */
+
+.xenon{
+    width: 100%;
+    height: 75vh;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.xenon .container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.xenon .container .left{
+    width: 30%;
+}
+.xenon .container .left img{
+    position: absolute;
+    left: 0;  
+}
+.xenon .container .right{
+    padding-left: 45px;
+}
+.xenon .container .right h2{
+    font-size: 35px;
+    color: #ff4831;
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: capitalize;
+}
+.xenon .container .right .pare{
+    color: #000;
+    font-size: 16px;
+    font-weight: 700; 
+    padding-bottom: 15px;
+}
+.xenon .container .right p{
+    color: #000;
+    font-size: 16px;
+    padding: 5px 0px;
+}
+.xenon .container .right .boxes{
+    display: flex;
+    padding-top: 10px;
+}
+.xenon .container .right .boxes .box{
+    margin-right: 160px;
+}
+.xenon .container .right .boxes .box p{
+    font-size: 16px;
+    color: #070000;
+}
+.xenon .container .right .btn{
+    padding: 10px 30px;
+}
+.xenon .container .right .btn:hover{
+    color: #ff4831;
+    background: #fff;
+    border: 1px solid #ff4831;
+}
+
+/* XENON  SECTION STYLE END HERE */
+
+.services{
+    width: 100%;
+    min-height: 120vh;
+    background: #F6F6F6;
+    padding: 20px 0px;
+    text-align: center;
+}
+.services h1 , .project h1 , .work h2 , .about h2 , .client h2 , .price h2 , .team h2 , .article h2 , .contact h2{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    padding: 20px 0px;
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: capitalize;
+    position: relative;
+    display: inline-block;
+}
+.services h1::before , .project h1::before , .work h2::before , .about h2::before , .client h2::before , .price h2::before , .team h2::before , .article h2::before , .contact h2::before{
+    content:"";
+    width: 50%;
+    height: 3px;
+    background:#ff4831;
+    position: absolute;
+    left:20%;
+    bottom: 0;
+}
+.services h1::after , .project h1::after , .work h2::after , .about h2::after , .client h2::after , .price h2::after , .team h2::after , .article h2::after , .contact h2::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ff4831;
+    position: absolute;
+    right: 52%;
+    bottom: -3px;
+}
+.services p , .project p{
+    color: rgb(114, 110, 110);
+    font-size: 18px;
+    margin-top: 20px;
+}
+.services .boxes{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 53px;
+}
+.services .box{
+    width: 30%;
+    height: 240px;
+    border: 1px solid #000;
+    background: #fff;
+    position: relative;
+    padding: 40px 0px;
+}
+.services .box .num{
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+.services .box .num h2{
+    color: gray;
+    opacity: 0.5;
+    font-size: 45px;
+}
+.services .box .icon{
+    width: 40px;
+    height: 40px;
+    background-color: #ff4831;
+    display: inline-block; 
+}
+.services .box h2{
+    font-size: 25px;
+    color: #000;
+    font-family: 'Fira Sans', sans-serif;
+    padding-top: 10px;
+}
+.services .box p{
+    padding: 0px 5px;
+    color: #000;
+}
+
+/* SERVICES SECTION END HERE */
+
+.project{
+    text-align: center;
+    width: 100%;
+    height: 130vh;
+}
+.project h1{
+    padding-top: 80px;
+}
+.project p{
+    margin-top: 20px;
+}
+.project .container{
+    width: 90%;
+    margin: 40px auto 0px;   
+}
+.project .container .box{
+    width: 33.33%;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    border: none;
+    outline: none;
+}
+.project .container .box img{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.project .container .box:hover::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #ff4831;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+}
+
+/* PROJECT SECTION STYLE END HERE */
+
+.work{
+    width: 100%;
+    min-height: 50vh;
+    background: #333333;
+    text-align: center;
+}
+.work h2 , .about h2 , .client h2 , .price h2 , .team h2 , .article h2 , .contact h2{
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 50px;
+    font-family: 'Fira Sans', sans-serif;
+}
+.work p{
+    color: #fff;
+    padding-top: 5px;
+}
+.work .container{
+    width: 90%;
+    margin: 40px auto 0px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.work .container .box{
+    width:22.5%;
+    padding: 40px 0px 20px;
+    text-align: center;
+}
+.work .container .box .icon{
+    width: 30px;
+    height: 30px;
+    background-color: #ff4831;
+    margin: 0 auto;
+    padding: 5px 0px 0px;
+    border-radius: 6px;
+
+}
+.work .container .box h3{
+    padding: 5px 0px 0px;
+    color: #fff;
+    font-size: 30px;
+}
+.work .container .box p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0px;
+    text-transform: capitalize;
+}
+
+/* WORK SECTION STYLE END HERE */
+
+.about{
+    width: 100%;
+    min-height: 120vh;
+    background: #fff;
+    text-align: center;
+}
+.about h2 , .article h2 , .team h2{
+    color: #000;
+    text-transform: capitalize;
+    font-size: 30px; 
+}
+.about p{
+    margin-top: 10px;
+}
+.about .container{
+    width: 90%;
+    height: 100vh;
+    margin: 50px auto 0px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.about .container .leftcon{
+    float: left;
+    position: relative;
+}
+.about .container .leftcon::after{
+    content: "";
+    width: 5px;
+    height: 400px;
+    background: #ff4831;
+    position: absolute;
+    top: 52%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
+.about .container .righttcon{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+.about .container .contbox{
+    width: 90%;
+    padding: 10px;
+    text-align: right;
+    border: 1px solid #ff4831;
+    margin-bottom: 120px;
+}
+.about .container .contbox h3{
+    color: #ff4831;
+    font-size: 21px;
+}
+.about .container .contbox h1{
+    font-size: 25px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    word-spacing: 5px;
+}
+.about .container .contbox p{
+    color: rgb(37, 35, 35);
+    font-size: 15px;
+    padding: 0px 5px;
+}
+
+/* ABOUT SECTION STYLE END HERE */
+
+.client{
+    width: 100%;
+    min-height: 50vh;
+    background: #333333;
+    text-align: center;
+}
+.client p{
+    color: #fff;
+    padding-top: 10px;
+}
+.client .clnbox{
+    width: 60%;
+    margin: 33px auto 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.client .clnbox .clnimg{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.client .clnbox .clnimg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.client .clnbox p{
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+.client .clnbox h3{
+    color: #fff;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+.client .clnbox .icons{
+    margin-bottom: 30px;
+    padding-top: 5px;
+}
+
+/* CLIENTS SECTION STYLE END HERE */
+
+.price{
+    width: 100%;
+    min-height: 70vh;
+    background: #F6F6F6;
+    text-align: center;
+}
+.price h2{
+    color: #000;
+}
+.price p{
+    padding: 10px 0px 0px;
+}
+.price .container{
+    width: 90%;
+    margin: 40px auto 40px ;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.price .container .pricebox{
+    width: 30%;
+    height: 380px;
+    text-align: center;
+    padding: 50px 20px 0px;
+    background: #fff;
+    box-shadow: 0px 0px 7px -3px #000;
+    border-radius: 10px;
+}
+.price .container .pricebox h3{
+    color: #302d2d;
+    font-size: 20px;
+    font-family: 'Fira Sans', sans-serif;
+}
+.price .container .pricebox h1{
+    color: #000;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 5px 0px;
+}
+.price .container .pricebox p{
+    padding: 5px 0px;
+    font-weight: 700;
+    color: gray;
+    font-size: 18px;
+}
+.price .container .pricebox .btn , .article .container .artbox .btn , .freelancer .center .btn{
+    display: inline-block;
+    padding: 10px 35px;
+    color: #fff;
+    text-decoration: none;
+    background: #ff4831;
+    border: 1px solid #ff4831;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+}
+.price .container .pricebox .btn:hover , .article .container .artbox .btn:hover{
+    color: #ff4831;
+    background: #fff;
+    border: 1px solid #ff4831;
+    transition: .4s;
+}
+
+/* PRICE SECTIN STYLE END HERE */
+
+.team{
+    width: 100%;
+    min-height: 50vh;
+    background: #fff;
+    margin-top: 50px;
+    text-align: center;
+}
+.team h2{
+    color: #000;
+    word-spacing: 10px;
+}
+.team p{
+    padding-top: 10px;
+}
+.team .container{
+    width: 90%;
+    margin: 20px auto 20px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.team .container .teammember{
+    width: 30%;
+    height: 400px;
+}
+.team .container .teammember img{
+    width: 100%;
+    height: 100%;
+}
+
+/* TEAM SECTION STYLE END HERE */
+
+
+.article{
+    width: 100%;
+    min-height: 70vh;
+    background: #F6F6F6;
+    padding: 10px 0px;
+    text-align: center;
+}
+.article h2{
+    color: #000;
+}
+.article p{
+    padding: 10px 0px;
+}
+.article .container{
+    width: 85%;
+    margin: 20px auto 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.article .container .artbox{
+    width: 32.33%;
+    height: 500px;
+    text-align: start;
+    padding-bottom: 0px;
+    background: #fff;
+}
+.article .container .artbox:hover{
+    box-shadow: -4px 0px 18px -5px #000;
+    color: #ff4831;
+}
+.article .container .artbox .artimg{
+    width: 100%;
+    height: 50%;
+}
+.article .container .artbox .artimg img{
+    width: 100%;
+}
+.article .container .artbox h3{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Fira Sans', sans-serif;
+    text-align: start;
+    padding: 30px 0px 0px 10px;
+}
+.article .container .artbox h4{
+    text-align: start;
+    color: gray;
+    font-size: 20px;
+    padding: 2px 0px 0px 10px;
+}
+.article .container .artbox p{
+    text-align: start;
+    color: #000;
+    padding: 2px 0px 0px 10px;
+}
+.article .container .artbox .btn{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+/* ARTICLE SECTION STYLE END HERE */
+
+.freelancer{
+    width: 100%;
+    height: 40vh;
+    background-image: url(../images/nature1.jpg);
+    background-size: cover;
+    background-position:center center;
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.freelancer::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;  
+}
+.freelancer .center{
+    z-index: 1;
+    color: #fff;
+    width: 60%;
+    margin: 0 auto;
+}
+.freelancer .center h2{
+    text-transform: capitalize;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    padding: 5px 0px;
+}
+.freelancer .center p{
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    padding: 5px 0px;
+}
+.freelancer .center .btn{
+    margin-top: 25px;
+    border-radius: 2px solid #ff4831;
+}
+.freelancer .center .btn:hover{
+    background: #fff;
+    border: 1px solid #000;
+    color: #ff4831;
+    transition: 0.4s;
+}
+
+/* FRELANCER SECTION STYLE END HERE */
+
+.contact{
+    width: 100%;
+    max-height: 90vh;
+    background: #fff;
+    text-align: center;
+}
+.contact h2{
+    color: #000;
+    font-size: 35px;
+}
+.contact p{
+    padding-top: 20px;
+}
+.contact .container{
+    width: 90%;
+    height: 600px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: row;
+}
+.contact .container  .left{
+    width: 60%;
+    height: 400px;
+}
+.contact .container  .left form input , button{
+    width: 100%;
+    border: 1px solid #000;
+    outline: none;
+    padding: 10px;
+    margin: 10px 10px;
+    text-align: start;
+    color: gray;
+    font-size: 15px;
+}
+.contact .container  .left form button{
+    background: #ff4831;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+}
+.contact .container  .right{
+    width: 25%;
+    height: 400px;
+    margin-left: 30px;
+    padding-left: 23px;
+}
+.contact .container  .right .box{
+    display: flex;
+    flex-direction: row;
+    padding: 15px 0px;
+}
+.contact .container  .right .box .icon{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    padding: 10px;
+    background: #ff4831;
+    position: relative;
+    border-radius: 4px;
+    transform:rotate(219deg);
+}
+.contact .container  .right .box .text{
+    padding: 0px;
+    margin-left: 18px;
+}
+.contact .container  .right .box .text h3{
+    padding: 0px;
+    text-align: start;
+}
+.contact .container  .right .box .text p{
+    padding: 0px;
+    text-align: start;
+}
+.contact .container  .right .box:first-child{
+    padding-top: 20px;
+}
+
+/* CONTACT SECTION STYLE END HERE */
+
+.footer{
+    width: 100%;
+    height: 40vh;
+    background: #333333;
+    padding: 20px;
+    text-align: center;
+}
+.footer h2{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 30px;
+    font-family: 'Fira Sans', sans-serif;
+}
+.footer .sociaicon{
+    width: 30%;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.footer .sociaicon .box{
+   margin: 0px 25px;
+}
+.footer hr{
+    width: 90%;
+    margin: 0 auto;
+}
+.footer p{
+    color: #fff;
+    padding-top: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
